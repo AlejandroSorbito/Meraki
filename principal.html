@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal Dashboard - Meraki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+    <header class="navbar">
+        <div class="logo-container">
+            <span class="logo-icon">🔵🟡⚪</span>
+            <h1 class="logo">Meraki</h1> </div>
+        <div class="menu-icon">☰</div>
+    </header>
+
+    <main class="principal-main">
+        <h2 class="section-title">School Overview</h2> <div class="kpi-container">
+            <div class="kpi-card total-kpi">
+                <span class="kpi-label">Total Teachers:</span>
+                <span class="kpi-value">42</span> </div>
+            <div class="kpi-card high-kpi">
+                <span class="kpi-label">High Risk</span>
+                <span class="kpi-value text-red">8</span> </div>
+            <div class="kpi-card moderate-kpi">
+                <span class="kpi-label">Moderate Risk</span> 
+                <span class="kpi-value text-green">15</span> </div>
+        </div>
+
+        <div class="table-container">
+            <table class="teacher-table">
+                <thead>
+                    <tr>
+                        <th>Teacher</th> <th>Teaching Load</th> <th>Admin Roles</th> <th>Risk Level</th> </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Maria Santos</td> <td>6</td> <td>2</td> <td><span class="risk-badge high-risk-bg">High</span></td> </tr>
+                    <tr>
+                        <td>Jose Reyes</td> <td>5</td> <td>1</td> <td><span class="risk-badge moderate-risk-bg">Moderate</span></td> </tr>
+                    <tr>
+                        <td>Ana Cruz</td> <td>4</td> <td>1</td> <td><span class="risk-badge low-risk-bg">Low</span></td> </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="heatmap-container">
+            <div class="heatmap-grid">
+                <div class="heat-box gray"></div><div class="heat-box gray"></div><div class="heat-box green"></div><div class="heat-box green"></div><div class="heat-box yellow"></div><div class="heat-box orange"></div><div class="heat-box red"></div><div class="heat-box red"></div><div class="heat-box orange"></div><div class="heat-box yellow"></div><div class="heat-box green"></div><div class="heat-box gray"></div>
+                <div class="heat-box gray"></div><div class="heat-box gray"></div><div class="heat-box gray"></div><div class="heat-box green"></div><div class="heat-box yellow"></div><div class="heat-box yellow"></div><div class="heat-box orange"></div><div class="heat-box orange"></div><div class="heat-box yellow"></div><div class="heat-box green"></div><div class="heat-box green"></div><div class="heat-box gray"></div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
