@@ -643,3 +643,80 @@ footer {
 .heat-box.yellow { background-color: #fde047; }
 .heat-box.orange { background-color: #fb923c; }
 .heat-box.red { background-color: #ef4444; }
+
+/* --- Pop up for teacher editing profile --- */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.6); /* Dark semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+    max-height: 90vh; /* Prevents it from getting taller than the screen */
+    overflow-y: auto; /* Allows scrolling inside the pop-up if needed */
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #94a3b8;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-btn:hover {
+    color: #334155;
+}
+
+#editForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#editForm label {
+    font-weight: bold;
+    color: #3b5ca0;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+#editForm input,
+#editForm textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f8fafc;
+    font-family: inherit;
+}
+
+#editForm input:focus,
+#editForm textarea:focus {
+    outline: none;
+    border-color: #3b5ca0;
+    background-color: #ffffff;
+}
+
+#editForm textarea {
+    resize: vertical;
+    min-height: 60px;
+}
